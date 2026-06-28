@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Meus apps
+    "tasks",
+    # Bibliotecas para REST API e CORS
+    "rest_framework",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
