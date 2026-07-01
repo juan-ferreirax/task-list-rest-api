@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ### 3. Variáveis de Ambiente
 Crie um arquivo `.env` na raiz (baseado no `.env.example`) e configure os dados:
 ```env
-DB_NAME=task-list
+DB_NAME=task
 DB_USER=seu-usuario
 DB_PASSWORD=sua-senha
 DB_HOST=127.0.0.1
