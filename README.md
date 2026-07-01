@@ -19,7 +19,7 @@ API RESTful para gerenciamento de tarefas, desenvolvida com **Django** e **Djang
 ### 1. Banco de Dados (MySQL)
 Crie o schema no seu banco:
 ```sql
-CREATE SCHEMA `task-list` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE SCHEMA `tasks` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
 ```
 
 ### 2. Configuração do Ambiente e Dependências
