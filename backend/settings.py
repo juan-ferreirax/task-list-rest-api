@@ -9,7 +9,13 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
+import platform
 
+# Verifica se a arquitetura é ARM (termux geralmente retorna 'aarch64' ou 'arm')
+if platform.machine().lower().startswith(('arm', 'aarch64')):
+    import pymysql
+    pymysql.install_as_MySQLdb()
+    pymysql.version_info = (2, 2, 1, "final", 0)
 import os
 from dotenv import load_dotenv
 from pathlib import Path
